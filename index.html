@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+    
+    <div class="game-info">
+        <div id="game-rules">
+           <details>
+           <summary id="rules-heading"> Game rules</summary>
+            <ul id="rules-info">
+                <li>2 players (X and O)</li>
+            <li>To win: Get 3 marks in a row (horizontal, vertical, or diagonal)</li>
+            <li>Draw: Board fills up with no winner</li>
+            </ul>
+           </details>
+            
+        </div>
+        <button id="reset-game">Start New Game</button>
+
+        <div class="theme-toggle">
+            <input type="checkbox" name="theme" id="theme-switch" width="40px">
+            <label for="theme">Toggle Dark/Light switch</label>
+        </div>
+    </div>
+
+    <div id="game-container">
+        <h1 id="game-heading">Tic-Tac-Toe</h1>
+        <div id="game-board"></div>
+        <div id="player">
+            <span id="turn">Player X</span>
+        </div>    
+   </div> 
+
+   <div class="score">
+        <h2 id="score-heading">Scoreboard</h2>
+        <div id="score-board">
+            <div id="X-score">X: 0</div>
+            <div id="O-score">O: 0</div>
+        </div>
+        <div class="reset-score">
+            <button id="reset-score">Reset Score</button>
+        </div>
+   </div>  
+    
+    <script src="./script.js"></script>
+</body>
+</html>
